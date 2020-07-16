@@ -1,0 +1,914 @@
+
+   styles.css
+
+
+body {
+  border-radius: 2px;
+  padding: 4px 25px 5px 10px;
+  top: 50%;
+  align: center;
+  background-color: #fff;
+  border: 1px solid #c80000;
+  color: #333333;
+  font-family: 'Poppins-Regular', sans-serif;
+}
+
+.navbar-custom {
+  background-color: #c80000;
+}
+
+.container {
+  table-layout: auto;
+  padding-top: 5%;
+  width: 80%;
+  height: auto;
+  background-color: #f7f7f7;
+  border: 3px solid #c80000;
+  margin: 5% auto 5% auto;
+  border: 8px solid #c80000;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  padding-bottom: 2%;
+}
+
+.submit_btn {
+  font-size: 22px;
+  border-radius: 5px;
+  background-color: #c80000;
+  color: #fff;
+  margin-left: 45%;
+}
+.button{
+  font-size: 22px;
+  border-radius: 5px;
+  background-color: #c80000;
+  color: #fff;
+  margin-left: 45%;
+}
+
+.h2 {
+  text-align: center;
+  padding-bottom: 3%;
+  color: #f7f7f7;
+}
+
+.h3 {
+  background-color: #c80000;
+  color: #f7f7f7;
+  text-align: center;
+}
+
+
+.card {
+  margin: 10% 10%;
+  width: 90%;
+  height: 90%;
+}
+
+.row {
+  padding-left: 5%;
+  padding-top: 2%;
+}
+
+.btn-outline-custom:hover {
+  color: #f7f7f7 !important;
+  background-color: #c80000;
+}
+
+.table {
+  width: 93%;
+  padding: 4px 0 2px 0;
+  text-align: center;
+}
+
+.btn-danger:hover{
+  background-color: #bc2525 !important;
+}
+
+.heading {
+  margin-left: 3em;
+  margin-right: 3em;
+  text-align: center;
+}
+
+
+.text_left {
+  text-align: left;
+}
+
+
+#space {
+  margin-left: 5%;
+}
+
+#main {
+  padding: 2% 10% 10% 5%;
+  background-color: #fff;
+}
+
+#center_1 {
+  margin: 0;
+  position: relative;
+  bottom: 10%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.h1_main{
+  margin-top: 7%;
+  margin-left: 7%;
+}
+.h1_page_2{
+  margin-top: 0.2%;
+  margin-left: 7%;
+}
+
+
+
+/* page_2.php
+
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Internship Homepage</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/dc6b196a84.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <body>
+    <nav class="fixed-top navbar-custom navbar navbar-expand-lg ">
+    <a class="navbar-brand" href="#" style="color: #f7f7f7"><b>RAIT Internships</b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+  <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+  </span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+      <ul class="navbar-nav mr-auto">
+        </ul>
+      <form class="form-inline my-2 my-lg-0">
+
+        <a href="page_2.php" class="btn btn-outline-light my-2 my-sm-0 mr-3"><b>Home</b></a>
+        <a href="page_4.html" class="btn btn-outline-light my-2 my-sm-0 mr-3"><b>Apply</b></a>
+      </form>
+     <a href="#"><i class="fa fa-user-circle fa-2x" style="color: #f7f7f7;"></i> </a>
+    </div>
+    <a href="#" class="nav-item nav-link" style="color:#f7f7f7;"><?php echo $_SESSION['roll_no'] ?></a>
+
+  </nav>
+  <br><br>
+
+  <a href="#" class="nav-item nav-link" style="color:#f7f7f7;"><?php echo $_SESSION['roll_no'] ?></a>
+
+<section id=main>
+
+
+  <div>
+  	<h1 style="margin-left: 5%; color: #666666;" align="center" >YOUR INTERNSHIP DETAILS</h1><br>
+
+      &emsp;&emsp;&emsp;&emsp;&nbsp;<button class="btn btn-outline-custom  filter-button" data-filter="all" style="border-color:#c80000;">All</button>&nbsp;
+        <button class="btn btn-outline-custom filter-button" data-filter="Pending"  style="border-color:#c80000;">Pending</button>&nbsp;
+        <button class="btn btn-outline-custom filter-button" data-filter="Approved" style="border-color:#c80000;">Approved</button>&nbsp;
+        <button class="btn btn-outline-custom filter-button" data-filter="Rejected" style="border-color:#c80000;">Rejected</button>&nbsp;
+    </div>
+
+    <div class="row">
+
+    <?php
+					include("connect.php");
+          $sql = "SELECT * FROM internship_data INNER JOIN login ON internship_data.roll_no = login.roll_no WHERE login.roll_no = '{$_SESSION['roll_no']}' ORDER BY year_new DESC";
+          $result = $conn->query($sql);
+
+          if ($result->num_rows > 0) {
+					while($row = $result->fetch_assoc())
+					{
+
+
+					?>
+            <div class="col-lg-4 col-md-6 pricing-column filter <?php echo $row['approval_status']; ?>">
+              <div class="card border-danger" style="max-width: 2000px;">
+                <a style="color:#fff;" href="page_3.php?id=<?php echo $row['topic'];?>& p_id=<?php echo $row['roll_no'];?>">
+                  <div class="card-header text-#f7f7f7;" style="background-color: #c80000;">
+                    <h3 class="h3">Internship I</h3>
+                  </div>
+                  <div class="card-body">
+                    <p>
+                      <img src="images/internship.jpg" width="102%" height="145%">
+                    </p>
+                    <h3 style="color:#666666">Topic : <?php echo $row['topic']; ?></h3>
+                    <h3 style="color:#666666">Year : <?php echo $row['year_new']; ?></h3>
+                    <h3 style="color:#666666">Status: <?php echo $row['approval_status']; ?></h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <?php
+            }
+
+            } else { echo "0 results"; }
+            $conn->close();
+            ?>
+    </div>
+
+  </section>
+<script>
+  $(document).ready(function(){
+
+$(".filter-button").click(function(){
+    var value = $(this).attr('data-filter');
+
+    if(value == "all")
+    {
+        //$('.filter').removeClass('hidden');
+        $('.filter').show();
+    }
+    else
+    {
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+        $(".filter").not('.'+value).hide();
+        $('.filter').filter('.'+value).show();
+
+    }
+});
+
+});
+</script>
+</section>
+</body>
+
+</html>
+
+
+
+
+   page_3.php
+
+
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RAIT</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<script src="https://kit.fontawesome.com/dc6b196a84.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<style type="text/css">
+	.pink {
+		background: #fff;
+
+	}
+	.white {
+		background: white;
+		border: 1px solid purple;
+	}
+	div.a{
+		font-size: 18px;
+	}
+
+</style>
+</head>
+<body class="pink">
+  <nav class="fixed-top navbar-custom navbar navbar-expand-lg ">
+  <a class="navbar-brand" href="#" style="color: #f7f7f7"><b>RAIT Internships</b></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon">
+<i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+</span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+    <ul class="navbar-nav mr-auto">
+      </ul>
+    <form class="form-inline my-2 my-lg-0">
+
+      <a href="page_2.php" class="btn btn-outline-light my-2 my-sm-0 mr-3"><b>Home</b></a>
+      <a href="page_4.html" class="btn btn-outline-light my-2 my-sm-0 mr-4"><b>Apply</b></a>
+    </form>
+   <a href="#"><i class="fa fa-user-circle fa-2x" style="color: #f7f7f7;"></i> </a>
+  </div>
+
+</nav>
+<br><br>
+
+
+<div class="container">
+	<h1 align="center" style="color: #666666">YOUR INTERNSHIP DETAILS</h1><br>
+
+
+            <?php
+                include("connect.php");
+                if(isset($_GET['id'])){
+                    $rollId=$_GET['p_id'];
+                    $topicId=$_GET['id'];
+                    $sql = "SELECT * FROM internship_data WHERE internship_data.topic = '$topicId' AND internship_data.roll_no = '$rollId' ";
+                    $result = $conn->query($sql);
+                    $data = mysqli_fetch_array($result);
+                }
+
+            ?>
+
+                    <div class="col-lg-12 a" style="color: #333333;"><b>
+                        <br><br>
+                        Topic: <?php echo $data['topic']?><br><br>
+                        Year: <?php echo $data['year_new'] ?> <br><br>
+                        Duration: <?php echo $data['duration'] ?> <br><br>
+                        Start & End Date: <?php echo $data['starting_date'] ?> to <?php echo $data['end_date'] ?> <br><br>
+                        Approval Status:  <?php echo $data['approval_status'] ?> <br><br>
+                        Completion Status: <?php echo $data['completion_status'] ?> <br><br>
+                        Comment:  <?php echo $data['comment'] ?>  <br><br>
+                        <label for="myfile">Upload Certificate here:</label>
+                        <input type="file" id="myfile" name="myfile" multiple><br><br>
+                        <form method = "POST">
+
+            <button id="completestat" name="completestat" value = "Completed" class="submit_btn" type="submit" style="margin-left: 45%">Submit</button>
+            </form><br></b>
+            <?php
+            if (isset($_POST['completestat'])) {
+              mysqli_query($conn,"UPDATE internship_data SET completion_status = '".$_POST['completestat']."'
+              WHERE internship_data.roll_no = '$rollId' AND internship_data.topic = '$topicId'");
+              header('location:page_2.php');
+            }
+            ?>
+                    </div>
+
+
+            </div>
+</body>
+</html>
+
+
+
+
+
+page_4.html
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RAIT</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+  	<script src="https://kit.fontawesome.com/dc6b196a84.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+<body class="pink">
+  <nav class="fixed-top navbar-custom navbar navbar-expand-lg ">
+  <a class="navbar-brand" href="#" style="color: #f7f7f7"><b>RAIT Internships</b></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon">
+<i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+</span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+    <ul class="navbar-nav mr-auto">
+      </ul>
+    <form class="form-inline my-2 my-lg-0">
+
+      <a href="page_2.php" class="btn btn-outline-light my-2 my-sm-0 mr-3 " ><b>Home</b></a>
+      <!-- <a href="#" class="btn btn-outline-success my-2 my-sm-0 mr-4 " ><b>Apply Here!</b></a> -->
+    </form>
+   <a href="#"><i class="fa fa-user-circle fa-2x" style="color: #f7f7f7;"></i> </a>
+  </div>
+
+</nav>
+<br><br>
+<div class="container container_2" >
+<h1 align="center" style="color: #666666">YOUR INTERNSHIP DETAILS</h1><br>
+<form action = "internship.php" method = "POST">
+
+
+		<div class="col-lg-12 a" style="color: #333333;"><b>
+            <br><br>
+            <h2 style="color:black">Enter details here:</h2><br>
+            <label for = "roll_no">Roll No:</label>&ensp;
+            <input type ="text" name = "roll_no" required><br><br>
+            <label for= "topic">Topic: </label>&emsp;&ensp;
+            <input type="text" name = "topic" required><br><br>
+            <label for = "year">Year: </label>&emsp;&emsp;
+            <input type="text" name = "year" required><br><br>
+            <label for = "duration" >Duration:</label>
+            <input type="number" name = "duration" id="duration" required>&nbsp;months</input><br><br>
+            <label for = "start_end_date">Start & End Date:</label>
+            <input type="date" name = "start_date" required>&emsp; to </input>&emsp;
+            <input type="date" name = "end_date" required><br><br>
+
+  <label for="myfile">Add Additional Documents:</label>
+  <input type="file" id="myfile" name="myfile" multiple><br><br>
+  <button class="submit_btn" type="submit" onsubmit="othername;">Submit</button>
+</form><br></b>
+<script>function othername() {
+ var dur = document.getElementById("duration").value;
+
+ var start_date = document.getElementById("start").value;
+
+var end_date = start_date.getMonth() + dur;
+alert(end_date);
+}</script>
+
+</div>
+
+</div>
+</div>
+</body>
+</html>
+
+
+
+
+  admin_1.php
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Internship Homepage</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/dc6b196a84.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <body>
+    <nav class="fixed-top navbar-custom navbar navbar-expand-lg ">
+    <a class="navbar-brand" href="#" style="color: #f7f7f7"><b>RAIT Internships</b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+  <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+  </span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+      <ul class="navbar-nav mr-auto">
+        </ul>
+      <form class="form-inline my-2 my-lg-0">
+
+        <a href="admin_2.php" class="btn btn-outline-light my-2 my-sm-0 mr-3"><b>Admin</b></a>
+
+      </form>
+     <a href="#"><i class="fa fa-user-circle fa-2x" style="color: #f7f7f7;"></i> </a>
+    </div>
+
+  </nav>
+  <section id=main>
+
+
+    <div style="margin-top:8%;">
+    	<h1 style="margin-left: 5%; color: #666666;" align="center" >LISTS OF INTERNSHIPS FOR APPROVAL</h1><br>
+
+
+        &emsp;&emsp;&emsp;&emsp;&nbsp;<button class="btn btn-outline-custom filter-button" data-filter="all" style="border-color:#c80000;">All</button>&nbsp;
+        <button class="btn btn-outline-custom  filter-button" data-filter="Pending" style="border-color:#c80000;">Approval</button>&nbsp;
+        <button class="btn btn-outline-custom  filter-button" data-filter="in-progress" style="border-color:#c80000;">In Progress</button>&nbsp;
+        <button class="btn btn-outline-custom  filter-button" data-filter="Completed" style="border-color:#c80000;">Completed</button>&nbsp;
+        <button class="btn btn-outline-custom  filter-button" data-filter="Rejected" style="border-color:#c80000;">Rejected</button>
+    </div>
+
+    <div class="row">
+
+    <?php
+					include("connect.php");
+          $sql = "SELECT * FROM internship_data";
+          $result = $conn->query($sql);
+
+          if ($result->num_rows > 0) {
+					while($row = $result->fetch_assoc())
+					{
+
+					?>
+            <div class="col-lg-4 col-md-6 pricing-column filter <?php echo $row['approval_status']; ?> <?php echo $row['completion_status']; ?>">
+              <div class="card border-danger" style="max-width: 2000px;">
+                <a style="color:#fff;" href="admin_2.php?id=<?php echo $row['topic'];?>& p_id=<?php echo $row['roll_no'];?>">
+                  <div class="card-header text-#f7f7f7;" style="background-color: #c80000;">
+                    <h3 class="h3">Internship I</h3>
+                  </div>
+                  <div class="card-body">
+                    <p>
+                      <img src="images/internship.jpg" width="102%" height="145%">
+                    </p>
+                    <h3 style="color:#666666">Roll No : <?php echo $row['roll_no']; ?></h3>
+                    <h3 style="color:#666666">Topic : <?php echo $row['topic']; ?></h3>
+                    <h3 style="color:#666666">Year: <?php echo $row['year_new']; ?></h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <?php
+            }
+
+            } else { echo "0 internships for approval"; }
+            $conn->close();
+            ?>
+    </div>
+
+  </section>
+
+  <script>
+  $(document).ready(function(){
+
+$(".filter-button").click(function(){
+    var value = $(this).attr('data-filter');
+
+    if(value == "all")
+    {
+        //$('.filter').removeClass('hidden');
+        $('.filter').show();
+    }
+    else{
+
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+        $(".filter").not('.'+value).hide();
+        $('.filter').filter('.'+value).show();
+
+    }
+});
+
+});
+</script>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+  admin_2.php
+
+
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RAIT</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+  	<script src="https://kit.fontawesome.com/dc6b196a84.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<style type="text/css">
+	.pink {
+		background: #fff;
+
+	}
+	.white {
+		background: white;
+		border: 1px solid purple;
+	}
+	div.a{
+		font-size: 18px;
+	}
+
+</style>
+</head>
+<body class="pink">
+  <nav class=" fixed-top navbar-custom navbar navbar-expand-lg ">
+    <a class="navbar-brand" href="#" style="color: #f7f7f7;"><b>RAIT Internships</b></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon">
+<i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+</span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+    <ul class="navbar-nav mr-auto">
+      </ul>
+    <form class="form-inline my-2 my-lg-0">
+
+        <a href="page_2.php" class="btn btn-outline-light my-2 my-sm-0 mr-3 " ><b>Apply</b></a>
+
+    </form>
+   <a href="#"><i class="fa fa-user-circle fa-2x" style="color: #f7f7f7;"></i> </a>
+  </div>
+
+</nav>
+<br><br>
+
+
+
+<div class="container">
+		<div class="col-lg-12 a" style="color: #333333;"><b>
+                <h1 align="center" style="color: #666666;">INTERNSHIP DETAILS</h1><br>
+            <?php
+                include("connect.php");
+                if(isset($_GET['id'])){
+                    $topicId=$_GET['id'];
+                    $rollId=$_GET['p_id'];
+                    $sql = "SELECT * FROM internship_data WHERE internship_data.topic = '$topicId' AND internship_data.roll_no = '$rollId'";
+                    $result = $conn->query($sql);
+                    $data = mysqli_fetch_array($result);
+                }
+
+            ?>
+
+
+                        <br><br>
+                        Roll No:  <?php echo $data['roll_no']?> <br><br>
+                        Topic: <?php echo $data['topic']?> <br><br>
+                        Year: <?php echo $data['year_new'] ?> <br><br>
+                        Duration: <?php echo $data['duration'] ?> <br><br>
+                        Start & End Date: <?php echo $data['starting_date'] ?> to <?php echo $data['end_date'] ?> <br><br>
+
+                        <form method = "POST">
+                          <input type="text" placeholder = "Comments" name="comments"><br><br>
+                          <button id="apprrovalstat" name="apprrovalstat" value = "Approved" type="submit" class="btn btn-success btn-lg">Approve</button>
+                          <button id="apprrovalstat" name="apprrovalstat" value = "Rejected" type="submit" class="btn btn-danger btn-lg" style="background-color: #c80000;">Reject</button>
+                        </form><br></b>
+             <?php
+            if (isset($_POST['apprrovalstat'])) {
+              if($_POST['apprrovalstat']=='Approved'){
+                mysqli_query($conn,"UPDATE internship_data SET approval_status = '".$_POST['apprrovalstat']."',comment = 'Applied Successfully'
+                WHERE internship_data.roll_no = '$rollId' AND internship_data.topic = '$topicId'");
+                header('location:admin_1.php');
+              }else{
+                mysqli_query($conn,"UPDATE internship_data SET approval_status = '".$_POST['apprrovalstat']."',comment = '".$_POST['comments']."'
+                WHERE internship_data.roll_no = '$rollId' AND internship_data.topic = '$topicId'");
+                header('location:admin_1.php');
+              }
+
+            }
+            ?>
+                    </div>
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+feedback_main.php
+
+
+"heading"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<div class="container">
+<body>
+    <h1 style="text-align: center; color: #666666;" align="center">INTERNSHIP FEEDBACK</h1>
+    <br><br>
+
+    <form action="feedback.php" method="POST">
+    <label for="name" id="space">Student Name: </label>
+    <input type="text" name="" value="">
+    &emsp;&emsp;
+    <label for="date">Date:</label>
+    <input type="date" name="" value="">
+
+    <br><br>
+    <label for="" id="space">Industrial Supervisor:</label>
+    <input type="text" size="45" name="Industrial_Supervisor" required>&emsp;&emsp;
+    <label for="">Title: </label>
+     <input type="text" name="Title" size="32" required>
+    <br><br>
+    <label for=""id="space">Supervisor Email:</label>
+    <input type="email" size="40" name="Supervisor_Email" required>&emsp;
+    <label for="">Internship is:</label>&emsp;
+    <input type="radio" name="Internship_type" value="Paid" required> Paid&emsp;
+    <!-- <label for="paid">Paid</label> -->
+    <input type="radio" name="Internship_type" value="Unpaid" required> Unpaid
+    <!-- <label for="unpaid">Unpaid</label> -->
+    <br><br>
+    <label for="" id="space">Company/Organization name: </label>
+    <input type="text" name="" value="">
+
+    <br><br>
+    <label for="" id="space">Organization Address:</label>
+    <input type="text" size="80" name="Organization_Address" required>
+    <br><br>
+    <label for="" id="space">Faculty Coordinator:</label>
+    <input type="text" size="46" name="Faculty_Coordinator" required>&emsp;
+    <label for="">Department:</label>
+    <input type="text" size="27" name="Department" required>
+    <br><br>
+    <label for="" id="space">Date of Internship:</label>&emsp;
+    <label for="">From </label>&emsp;
+    <input type="date" name="Start_date" required>&emsp;
+    <label for="">To </label>&emsp;
+    <input type="date" name="End_date" required> <br>
+    <p id="space"><strong>Please fill out the above in full detail</strong></p>
+    <p id="space">Give a brief description of your internship work (title and tasks for which you were responsible):<br>
+        Was your internship experience related to your major area of study?
+    </p>
+    <label for="" id="space">Indicate the degree to which you agree or disagree with the following statements.</label>
+    <br>
+    <label for="" id="space" >
+    <input type="radio" name="Experience" value="Yes, to a large degree" required> Yes, to a large degree <br>
+    <input type="radio" name="Experience" value="Yes,to a slightly degree" required> Yes,to a slightly degree <br>
+    <input type="radio" name="Experience" value="No, not related at all" required> No, not related at all
+</label>
+    <table border="1px" id="space" class="table">
+        <tr>
+            <th class="text_left">This experience has:</th>
+            <th class="heading">Strongly <br> Agree</th>
+            <th class="heading">Agree</th>
+            <th class="heading">No Opinion</th>
+            <th class="heading">Disagree</th>
+            <th class="heading">Strongly <br> Disagree</th>
+        </tr>
+        <tr>
+            <td class="text_left">Given me the opportunity to explore a career field</td>
+            <td  ><input type="radio" name="Q_no_1" value="Strongly Agree" required></td>
+            <td  ><input type="radio" name="Q_no_1" value="Agree" required></td>
+            <td  ><input type="radio" name="Q_no_1" value="No Opinion" required></td>
+            <td  ><input type="radio" name="Q_no_1" value="Disagree" required></td>
+            <td  ><input type="radio" name="Q_no_1"  value="Strongly Disagree" required></td>
+        </tr>
+        <br>
+        <tr>
+            <td class="text_left">Allowed me to apply classroom theory to practice</td>
+            <td  ><input type="radio" name="Q_no_2"  value="Strongly Agree" required></td>
+            <td  ><input type="radio" name="Q_no_2"   value="Agree" required></td>
+            <td  ><input type="radio" name="Q_no_2"   value="No Opinion" required></td>
+            <td  ><input type="radio" name="Q_no_2"   value="Disagree" required></td>
+            <td  ><input type="radio" name="Q_no_2"   value="Strongly Disagree" required></td>
+        </tr>
+        <br>
+        <tr>
+            <td class="text_left">Helped me develop my decision-making and problem-solving skills</td>
+            <td  ><input type="radio" name="Q_no_3"   value="Strongly Agree" required></td>
+            <td  ><input type="radio" name="Q_no_3"   value="Agree" required></td>
+            <td  ><input type="radio" name="Q_no_3"   value="No Opinion" required></td>
+            <td  ><input type="radio" name="Q_no_3"   value="Disagree" required></td>
+            <td  ><input type="radio" name="Q_no_3"   value="Strongly Disagree" required></td>
+        </tr>
+        <tr>
+            <td class="text_left">Expanded my knowledge about the work world prior to permanent employment</td>
+            <td  ><input type="radio" name="Q_no_4" value="Strongly Agree" required></td>
+            <td  ><input type="radio" name="Q_no_4" value="Agree" required></td>
+            <td  ><input type="radio" name="Q_no_4" value="No Opinion" required></td>
+            <td  ><input type="radio" name="Q_no_4" value="Disagree" required></td>
+            <td  ><input type="radio" name="Q_no_4" value="Strongly Disagree" required></td>
+        </tr>
+        <tr>
+            <td class="text_left">Helped me develop my written and oral communication skills</td>
+            <td><input type="radio" name="Q_no_5"   value="Strongly Agree" required></td>
+            <td><input type="radio" name="Q_no_5"   value="Agree" required></td>
+            <td><input type="radio" name="Q_no_5"   value="No Opinion" required></td>
+            <td><input type="radio" name="Q_no_5"   value="Disagree" required></td>
+            <td><input type="radio" name="Q_no_5"   value="Strongly Disagree" required></td>
+        </tr>
+        <tr>
+            <td class="text_left">Provided a chance to use leadership skills <br>(influence others, develop ideas with others, stimulate decision-making and action)</td>
+            <td><input type="radio" name="Q_no_6"   value="Strongly Agree" required></td>
+            <td><input type="radio" name="Q_no_6"   value="Agree" required></td>
+            <td><input type="radio" name="Q_no_6"   value="No Opinion" required></td>
+            <td><input type="radio" name="Q_no_6"   value="Disagree" required></td>
+            <td><input type="radio" name="Q_no_6"   value="Strongly Disagree" required></td>
+        </tr>
+        <tr>
+            <td class="text_left">Expanded my sensitivity to the ethical implications of the work involved</td>
+            <td><input type="radio" name="Q_no_7"   value="Strongly Agree" required></td>
+            <td><input type="radio" name="Q_no_7"   value="Agree" required></td>
+            <td><input type="radio" name="Q_no_7"   value="No Opinion" required></td>
+            <td><input type="radio" name="Q_no_7"   value="Disagree" required></td>
+            <td><input type="radio" name="Q_no_7"   value="Strongly Disagree" required></td>
+        </tr>
+        <tr>
+            <td class="text_left">Made it possible for me to be more confident in new situations</td>
+            <td><input type="radio" name="Q_no_8"   value="Strongly Agree" required></td>
+            <td><input type="radio" name="Q_no_8"   value="Agree" required></td>
+            <td><input type="radio" name="Q_no_8"   value="No Opinion" required></td>
+            <td><input type="radio" name="Q_no_8"   value="Disagree" required></td>
+            <td><input type="radio" name="Q_no_8"   value="Strongly Disagree" required></td>
+        </tr>
+        <tr>
+            <td class="text_left">Given me a chance to improve my interpersonal skills</td>
+            <td><input type="radio" name="Q_no_9"   value="Strongly Agree" required></td>
+            <td><input type="radio" name="Q_no_9"   value="Agree" required></td>
+            <td><input type="radio" name="Q_no_9"   value="No Opinion" required></td>
+            <td><input type="radio" name="Q_no_9"   value="Disagree" required></td>
+            <td><input type="radio" name="Q_no_9"   value="Strongly Disagree" required></td>
+        </tr>
+        <tr>
+            <td class="text_left">Helped me learn to handle responsibility and use my time wisely</td>
+            <td><input type="radio" name="Q_no_10"   value="Strongly Agree" required></td>
+            <td><input type="radio" name="Q_no_10"   value="Agree" required></td>
+            <td><input type="radio" name="Q_no_10"   value="No Opinion" required></td>
+            <td><input type="radio" name="Q_no_10"   value="Disagree" required></td>
+            <td><input type="radio" name="Q_no_10"   value="Strongly Disagree" required></td>
+        </tr>
+        <tr>
+            <td class="text_left">Helped me discover new aspects of myself that I didn't know existed before</td>
+            <td><input type="radio" name="Q_no_11"   value="Strongly Agree" required></td>
+            <td><input type="radio" name="Q_no_11"   value="Agree" required></td>
+            <td><input type="radio" name="Q_no_11"   value="No Opinion" required></td>
+            <td><input type="radio" name="Q_no_11"   value="Disagree" required></td>
+            <td><input type="radio" name="Q_no_11"   value="Strongly Disagree" required></td>
+        </tr>
+        <tr>
+            <td class="text_left">Helped me develop new interests and abilities</td>
+            <td><input type="radio" name="Q_no_12"   value="Strongly Agree" required></td>
+            <td><input type="radio" name="Q_no_12"   value="Agree" required></td>
+            <td><input type="radio" name="Q_no_12"   value="No Opinion" required></td>
+            <td><input type="radio" name="Q_no_12"   value="Disagree" required></td>
+            <td><input type="radio" name="Q_no_12"   value="Strongly Disagree" required></td>
+        </tr>
+        <tr>
+            <td class="text_left">Helped me clarify my career goals</td>
+            <td><input type="radio" name="Q_no_13"   value="Strongly Agree" required></td>
+            <td><input type="radio" name="Q_no_13"   value="Agree" required></td>
+            <td><input type="radio" name="Q_no_13"   value="No Opinion" required></td>
+            <td><input type="radio" name="Q_no_13"   value="Disagree" required></td>
+            <td><input type="radio" name="Q_no_13"   value="Strongly Disagree" required></td>
+        </tr>
+        <tr>
+            <td class="text_left">Provided me with contacts which may lead to future employment</td>
+            <td><input type="radio" name="Q_no_14"   value="Strongly Agree" required></td>
+            <td><input type="radio" name="Q_no_14"   value="Agree" required></td>
+            <td><input type="radio" name="Q_no_14"   value="No Opinion" required></td>
+            <td><input type="radio" name="Q_no_14"   value="Disagree" required></td>
+            <td><input type="radio" name="Q_no_14"   value="Strongly Disagree" required></td>
+        </tr>
+        <tr>
+            <td class="text_left">Allowed me to acquire information and/or use equipment not available at my institute</td>
+            <td><input type="radio" name="Q_no_15"   value="Strongly Agree" required></td>
+            <td><input type="radio" name="Q_no_15"   value="Agree" required></td>
+            <td><input type="radio" name="Q_no_15"   value="No Opinion" required></td>
+            <td><input type="radio" name="Q_no_15"   value="Disagree" required></td>
+            <td><input type="radio" name="Q_no_15"   value="Strongly Disagree" required></td>
+        </tr>
+    </table>
+    <br><br>
+
+    <label for="q5" id="space">Considering your overall experience, how would you rate this internship?</label><br>
+    <label for="" id="space">
+    <input type="radio" name="overall_experience" value="Satisfactory" required> Satisfactory <br>
+    <input type="radio" name="overall_experience" value="Good" required> Good <br>
+    <input type="radio" name="overall_experience" value="Excellent" required> Excellent
+</label><br><br>
+      <button class="submit_btn" type="submit" style="margin-left=45%">Submit</button>
+    </form>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
+
+ */
